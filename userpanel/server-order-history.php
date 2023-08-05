@@ -1,10 +1,13 @@
 <?php include('inc/header.php') ?>
+<link rel="stylesheet" href="../userpanel/assets/css/dataTables.bootstrap5.0.min.css">
+
+
 
 <!--srart sidebar -->
 <div class="container-fluid ">
   <div class="row flex-nowrap">
-    <!--side bar -->
     <?php include('inc/sidebar.php') ?>
+
 
     <!-- start-main content -->
     <div class="col-md-10  flex-shrink-1 mx-auto pb-5 overflow-hidden ">
@@ -159,18 +162,14 @@
     <!-- end-main content -->
   </div>
 </div>
-<!-- end sidebar -->
+<!-- end sidebar
+ -->
 
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<?php include('inc/footer.php') ?>
+<script src="<?php echo $url ?>assets/js/dataTables.bootstrap5.0.min.js"></script>
 
 <script>
   $(document).ready(function() {
     $('#datatable').DataTable();
   });
 </script>
-
-<?php include('inc/footer.php') ?>

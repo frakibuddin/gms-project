@@ -1,3 +1,6 @@
+<?php
+$url = "";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,13 +11,13 @@
     <title>Gsmwebservers</title>
 
     <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo $url ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- fontawesome -->
-    <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-    <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet">
-    <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="<?php echo $url ?>assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="<?php echo $url ?>assets/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="<?php echo $url ?>assets/fontawesome/css/solid.min.css" rel="stylesheet">
     <!-- custom css -->
-    <link rel="stylesheet" href="../userpanel/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo $url ?>../userpanel/assets/css/style.css">
 
 
 </head>
@@ -22,7 +25,7 @@
 <body class="">
     <nav class="navbar navbar-expand-lg shadow-sm p-3">
         <div class="container-fluid">
-            <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="index.html">
+            <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="index.php">
                 <img src="assets/img/logo1.png" alt="logo" width="me-auto" height="24">
             </a> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +35,7 @@
                 <!-- mobile menu -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none db-991">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="index.html">
                             <i class="fa-solid fa-table"></i> Dashboard</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -40,8 +43,8 @@
                             <i class="fa-solid fa-signal"></i> Our Services
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a></li>
+                            <li><a class="dropdown-item" href="imei-services.php"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
+                            <li><a class="dropdown-item" href="server-services.php"><i class="fa-solid fa-server"></i> Server Services</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -49,8 +52,8 @@
                             <i class="fa-regular fa-file-lines"></i> Order History
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a></li>
+                            <li><a class="dropdown-item" href="imei-order-history.php"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
+                            <li><a class="dropdown-item" href="server-order-history.php"><i class="fa-solid fa-server"></i> Server Services</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -87,8 +90,8 @@
                             <span class="d-none d-sm-inline mx-1 t">Profile</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-light text-small shadow">
-                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="invoice.html">Invoice</a></li>
+                            <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                            <li><a class="dropdown-item" href="invoice.php">Invoice</a></li>
 
                             <li>
                                 <hr class="dropdown-divider">
@@ -104,8 +107,3 @@
             </div>
         </div>
     </nav>
-
-    <div class="alert alert-warning alert-dismissible fade show my-alert" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>

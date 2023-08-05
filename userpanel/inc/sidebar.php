@@ -5,7 +5,7 @@
         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidemenu-text-color" id="menu">
 
             <li>
-                <a href="index.html" class="nav-link px-0 align-middle  ">
+                <a href="index.php" class="nav-link px-0 align-middle  ">
                     <i class="fa-solid fa-table"></i>
                     <span class="ms-1 d-none d-sm-inline">Dashboard</span>
                 </a>
@@ -16,12 +16,12 @@
                     <i class="fa-solid fa-signal"></i> <span class="ms-1 d-none d-sm-inline"> Our Services</span> </a>
                 <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                     <li class="w-100">
-                        <a href="imei-services.html" class="nav-link px-0">
+                        <a href="imei-services.php" class="nav-link px-0">
                             <i class="fa-solid fa-barcode"></i>
                             <span class="d-none d-sm-inline"> IMEI Services</span> </a>
                     </li>
                     <li>
-                        <a href="server-services.html" class="nav-link px-0">
+                        <a href="server-services.php" class="nav-link px-0">
                             <i class="fa-solid fa-server"></i>
                             <span class="d-none d-sm-inline"> Server Services</span> </a>
                     </li>

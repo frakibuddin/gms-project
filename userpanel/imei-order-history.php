@@ -1,12 +1,18 @@
 <?php include('inc/header.php') ?>
+<link rel="stylesheet" href="../userpanel/assets/css/dataTables.bootstrap5.0.min.css">
+
+
 
 <!--srart sidebar -->
 <div class="container-fluid ">
   <div class="row flex-nowrap">
-    <!--side bar -->
     <?php include('inc/sidebar.php') ?>
+
+
     <!-- start-main content -->
     <div class="col-md-10  flex-shrink-1 mx-auto pb-5 overflow-hidden ">
+      <!--  -->
+
       <!-- Modal -->
       <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -59,7 +65,7 @@
         </div>
         <div class="card-body">
           <div class="container table-responsive">
-            <table id="datatable" class="table table-striped table-hover">
+            <table id="datatable2" class="table table-striped table-hover">
               <thead class="bg-dark text-white">
                 <tr>
                   <th style="width: 80px;">Order ID</th>
@@ -143,6 +149,8 @@
 
                   </td>
                 </tr>
+
+
               </tbody>
             </table>
           </div>
@@ -152,15 +160,17 @@
     <!-- end-main content -->
   </div>
 </div>
-<!-- end sidebar -->
+<!-- end sidebar
+ -->
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-<script>
-  $(document).ready(function() {
-    $('#datatable').DataTable();
-  });
-</script>
+
 
 <?php include('inc/footer.php') ?>
+<script src="<?php echo $url ?>assets/js/dataTables.bootstrap5.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#datatable2').DataTable();
+  });
+</script>
