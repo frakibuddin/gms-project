@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.main-content {
+  padding-left: 5% !important;
+}
+body.bg-dark {
+  color: #fff !important;
+}
+body.bg-light .text-light {
+  color: #000000 !important;
+}
+body.bg-dark .text-light {
+  color: #fff !important;
+}
+body.bg-dark .dropdown-menu-light {
+  background: rgb(7, 7, 41) !important;
+}
+body.bg-dark .dropdown-menu-light li a {
+  color: #fff !important;
+}
+
+body.bg-light .text-dark {
+  color: #000000 !important;
+}
+body.bg-dark .text-dark {
+  color: #ffffff !important;
+}
+body .sidebar {
+  background: #e4e4e4;
+  color: #000000 !important;
+  box-shadow: 3px 2px 2px 0px #80808066;
+}
+body.bg-dark .sidebar {
+  background: linear-gradient(45deg, #36454f, #36454f);
+  box-shadow: 4px 2px 5px 0px #445a68d9;
+}
+
+body .sidemenu-text-color a {
+  color: #000000 !important;
+}
+body.bg-dark .sidemenu-text-color a {
+  color: #fff !important;
+}
+/* body .sidemenu-text-color a:hover {
+  color: rgb(51, 204, 224) !important;
+} */
+body.bg-dark .nav-link {
+  color: #fff !important;
+}
+body.bg-light .nav-link {
+  color: #000000;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+}
+.modal-content {
+  color: #000000;
+}
+
+.alert {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  animation: alertAnim 0.3s linear forwards;
+}
+@keyframes alertAnim {
+  0% {
+    top: -2rem;
+  }
+  100% {
+    top: 0.5rem;
+  }
+}
+
+#datatable_paginate a {
+  background: #fff !important;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid gray;
+}
+#datatable_paginate .current {
+  background: #b9b8b8 !important;
+}
+.table-responsive {
+  padding: 1rem 0;
+  overflow-y: hidden;
+}
+
+body.bg-dark table.dataTable td,
+body.bg-dark table.dataTable th {
+  color: #fff !important;
+}
+body.bg-dark table.dataTable thead {
+  background: gray !important;
+}
+body.bg-dark nav {
+  box-shadow: 0 0.125rem 0.25rem #5e5c5c !important ;
+}
+.choices {
+  width: 100%;
+}
+.choices__list--dropdown .choices__item--selectable {
+  color: #000000;
+}
+body.bg-dark .card {
+  background: #36454f !important;
+}
+
+.dataTables_length {
+  width: 10rem;
+  float: left;
+  margin: 0.5rem 0;
+}
+.datatable_filter {
+  width: 14rem;
+  float: right;
+  margin: 0.5rem 0;
+}
+div.dataTables_filter input {
+  outline: 0 !important;
+  border: 1px solid #0f213f;
+  padding: 0.4rem 1rem;
+  border-radius: 4rem;
+  transition: 0.3s;
+}
+div.dataTables_filter input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(147, 154, 165, 0.25);
+}
+
+div.dataTables_wrapper div.dataTables_length select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(147, 154, 165, 0.25);
+}
+
+@media (max-width: 991px) {
+  .db-991 {
+    display: block !important;
+  }
+  .dn-991 {
+    display: none !important;
+  }
+}
